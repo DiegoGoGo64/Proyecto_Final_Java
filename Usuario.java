@@ -1,41 +1,47 @@
-package proyecto_final;
+package proyecto_final_4baco;
 
 public class Usuario {
 
-    protected String NombreUsuario, ContraUsuario, Nuevo_Nombre, ConfirmarContra;
+    String Nombre_Usuarios, Contra;
+    String Nombre, Confirmar_Contra;
 
-    public Usuario(String NombreUsuario, String Nuevo_Nombre, String ContraUsuario, String ConfirmarContra) {
-
-        this.NombreUsuario = NombreUsuario;
-        this.ContraUsuario = ContraUsuario;
-        this.Nuevo_Nombre = Nuevo_Nombre;
-        this.ConfirmarContra = ConfirmarContra;
-        
-       
-
+    public Usuario(String Nombre_Usuarios, String Contra, String Confirmar_Contra) {
+        this.Nombre_Usuarios = Nombre_Usuarios;
+        this.Contra = Contra;
+        //    this.Nombre = Nombre;
+        this.Confirmar_Contra = Confirmar_Contra;
     }
 
-    public String getNombre_Usuario() {
+    public String getNombre() {
+        return Nombre;
+    }
 
-        return this.NombreUsuario;
-
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
     }
 
     public String getContra() {
-
-        return this.ContraUsuario;
-
+        return Contra;
     }
 
-    public String getNew_Nombre() {
-
-        return this.Nuevo_Nombre;
-
+    public void setContra(String Contra) {
+        this.Contra = Contra;
     }
 
-    public String getConfirContra() {
-
-        return this.ConfirmarContra;
-
+    public String getNombre_Usuarios() {
+        return Nombre_Usuarios;
     }
+
+    public void setNombre_Usuarios(String Nombre_Usuarios) {
+        this.Nombre_Usuarios = Nombre_Usuarios;
+    }
+
+    public String getConfirmar_Contra() {
+        return Confirmar_Contra;
+    }
+
+    public void setConfirmar_Contra(String Confirmar_Contra) {
+        this.Confirmar_Contra = Confirmar_Contra;
+    }
+
 }
